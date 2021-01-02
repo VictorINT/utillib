@@ -77,7 +77,7 @@ static bool isPrime(unsigned long long n, int k)
 }
 
 
-bool primeStatus(int nr, int k)
+bool primeStatus(unsigned long long nr, int k)
 {
     if ((nr & 0x1) && isPrime(nr, k))
         return true;
