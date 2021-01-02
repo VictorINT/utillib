@@ -6,7 +6,10 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+#include <algorithm>
+#include <iterator>
 
+using namespace std;
 
 static long long power(unsigned long long x, unsigned long long  y, unsigned long long p)
 {
@@ -84,7 +87,7 @@ bool primeStatus(int nr, int k)
 
 unsigned long long getNextPrimeNumber(unsigned long long nr)
 {
-    if(primeStatus(nr))
+    if(primeStatus(nr, 20))
         nr++;
     unsigned long long next = 1;
     while(!primeStatus(next, 20)){
@@ -99,7 +102,7 @@ unsigned long long getNextPrimeNumber(unsigned long long nr)
 
 unsigned long long getPrevPrimeNumber(unsigned long long nr)
 {
-    if(primeStatus(nr))
+    if(primeStatus(nr, 20))
         nr++;
     unsigned long long prev;
     while(!primeStatus(prev, 20)){
@@ -113,12 +116,12 @@ unsigned long long getPrevPrimeNumber(unsigned long long nr)
     return prev;
 }
 
-void print_vector(vector <int> v1){
-    printf('[');
-    for(int i = 0; i < (v1.size() - 1); i++){
-        printf(v1.at(i), ', ');
-    }
-    printf(v1.at(size() - 1),']');
+void print_vector(vector <int> const& input){
+    cout << "[";
+    copy(input.begin(),
+        input.end(),
+        ostream_iterator<int>(cout, " "));
+    cout << "]";
 }
 //not done yet
 // void print_array(int *array, int length, int cols)
