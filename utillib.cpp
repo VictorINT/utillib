@@ -7,7 +7,6 @@
 #include <thread>
 #include <vector>
 
-#define unsigned long long ULL //not using yet
 
 static long long power(unsigned long long x, unsigned long long  y, unsigned long long p)
 {
