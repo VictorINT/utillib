@@ -2,7 +2,7 @@
 #define UTILLIB_H_INCLUDED
 #include <vector>
 using namespace std;
-bool primeStatus(int nr, int k);
+bool primeStatus(unsigned long long nr, int k);
 unsigned long long getNextPrimeNumber(unsigned long long nr);
 unsigned long long getPrevPrimeNumber(unsigned long long nr);
 void print_vector(vector <int> const& input)
