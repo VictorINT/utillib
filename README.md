@@ -1,2 +1,7 @@
-# utillib
- a library with simple but usefull functions(C++)
+## Functions
+
+- #### `primeStatus(nr, k)` is the first and the most important function
+
+    #### nr is the number to be tested
+    
+    #### k is the number of iterations(the bigger, the slower, but more accurate)
