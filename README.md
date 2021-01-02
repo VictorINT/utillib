@@ -1,7 +1,62 @@
-## Functions
+# utllib
 
-- #### `primeStatus(nr, k)` is the first and the most important function
+A c++ library with usefull functions like `print_vector()` and `primStatus()`
 
-    #### nr is the number to be tested
+## Getting Started
+
+copy paste the `.cpp` and `.h` files to your project and you're good to go
+
+## Examples of code using utllib
+
+```cpp
+
+#include "utillib.h"
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        int nr;
+        cin >> nr;
+        if(primeStatus(nr, 40))
+            cout << nr << ' ';
+    }
+    return 0;
+}
+```
+
+- The code above takes as input a var `n` and `n` numbers and print only the prime ones. 
+
+```cpp
+#include "utillib.h"
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main(){
+    vector <int> vec;
+    print_vector(vec);
+    return 0;
+}
+```
+
+- The code above takes as input a vector and prints it
+
+#### NOTE: only works for vectors, not for arrays(yet)
+
+| Function name | Description                    | Parameters                    |
+| ------------- | ------------------------------ | ------------------------------ |
+| `primeStatus()`      | checks if a number is prime or not       | number to be tested, number of iterations |
+| `getNextPrimeNumber()`   | returns the next prime number     | number to be tested |
+| `getPrevPrimeNumber()`   | returns the previous prime number    | number to be tested |
+| `print_vector()`   | prints a vector using the format `[a, b, c, d]`     | a vector of any type(from <vector> library |
     
-    #### k is the number of iterations(the bigger, the slower, but more accurate)
+   ```pascal
+ IMPORTANT: `the library is not thread safe yet! so you can not use it at its fully potential`
+```
+
+## END
