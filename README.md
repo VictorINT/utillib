@@ -21,7 +21,7 @@ int main(){
     for(int i = 0; i < n; i++){
         int nr;
         cin >> nr;
-        if(primeStatus(nr, 40))
+        if(is_prime(nr, 40))
             cout << nr << ' ';
     }
     return 0;
@@ -38,7 +38,7 @@ int main(){
 using namespace std;
 
 int main(){
-    vector <int> vec;
+    vector<int> vec;
     print_vector(vec);
     return 0;
 }
@@ -50,9 +50,9 @@ int main(){
 
 | Function name | Description                    | Parameters                    |
 | ------------- | ------------------------------ | ------------------------------ |
-| `primeStatus()`      | checks if a number is prime or not       | number to be tested, number of iterations |
-| `getNextPrimeNumber()`   | returns the next prime number     | number to be tested |
-| `getPrevPrimeNumber()`   | returns the previous prime number    | number to be tested |
+| `is_prime()`      | checks if a number is prime or not       | number to be tested, number of iterations |
+| `get_next_prime_number()`   | returns the next prime number     | number to be tested |
+| `get_prev_prime_number()`   | returns the previous prime number    | number to be tested |
 | `print_vector()`   | prints a vector using the format `[a, b, c, d]`     | a vector of any type(from <vector> library |
     
    ```pascal
