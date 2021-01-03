@@ -5,9 +5,9 @@
 
 using namespace std;
 
-bool primeStatus(unsigned long long nr, int k);
-unsigned long long getNextPrimeNumber(unsigned long long nr);
-unsigned long long getPrevPrimeNumber(unsigned long long nr);
+bool is_prime(unsigned long long nr, int k);
+unsigned long long get_next_prime_number(unsigned long long nr);
+unsigned long long get_prev_prime_number(unsigned long long nr);
 void print_vector(vector<int> const& input);
 //void print_array(int *array, int length, int cols);
 
