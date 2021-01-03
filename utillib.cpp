@@ -116,7 +116,7 @@ unsigned long long getPrevPrimeNumber(unsigned long long nr)
     return prev;
 }
 
-void print_vector(vector <int> const& input){
+void print_vector(vector<int> const& input){
     cout << "[";
     copy(input.begin(),
         input.end(),
