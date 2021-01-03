@@ -75,7 +75,7 @@ static bool isPrime(unsigned long long n, int k)
 }
 
 
-bool primeStatus(unsigned long long nr, int k)
+bool is_prime(unsigned long long nr, int k)
 {
     if ((nr & 0x1) && isPrime(nr, k))
         return true;
@@ -83,7 +83,7 @@ bool primeStatus(unsigned long long nr, int k)
         return false;
 }
 
-unsigned long long getNextPrimeNumber(unsigned long long nr)
+unsigned long long get_next_prime_number(unsigned long long nr)
 {
     if(primeStatus(nr, 20))
         nr++;
@@ -98,7 +98,7 @@ unsigned long long getNextPrimeNumber(unsigned long long nr)
     return next;
 }
 
-unsigned long long getPrevPrimeNumber(unsigned long long nr)
+unsigned long long get_prev_prime_number(unsigned long long nr)
 {
     if(primeStatus(nr, 20))
         nr++;
