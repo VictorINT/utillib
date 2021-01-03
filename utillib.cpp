@@ -115,11 +115,9 @@ unsigned long long getPrevPrimeNumber(unsigned long long nr)
 }
 
 void print_vector(vector<int> const& input){
-    cout << "[";
     copy(input.begin(),
         input.end(),
         ostream_iterator<int>(cout, " "));
-    cout << "]";
 }
 //not done yet
 // void print_array(int *array, int length, int cols)
