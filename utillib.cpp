@@ -85,10 +85,10 @@ bool is_prime(unsigned long long nr, int k)
 
 unsigned long long get_next_prime_number(unsigned long long nr)
 {
-    if(primeStatus(nr, 20))
+    if(is_prime(nr, 20))
         nr++;
     unsigned long long next = 1;
-    while(!primeStatus(next, 20)){
+    while(!is_prime(next, 20)){
         if(nr & 1){
             next = nr;
         }  else {
@@ -100,10 +100,10 @@ unsigned long long get_next_prime_number(unsigned long long nr)
 
 unsigned long long get_prev_prime_number(unsigned long long nr)
 {
-    if(primeStatus(nr, 20))
+    if(is_prime(nr, 20))
         nr++;
     unsigned long long prev;
-    while(!primeStatus(prev, 20)){
+    while(!is_prime(prev, 20)){
 
         if((nr & 1) && ((nr-1) > 0)){
             prev = nr;
@@ -119,6 +119,27 @@ void print_vector(vector<int> const& input){
         input.end(),
         ostream_iterator<int>(cout, " "));
 }
+/*
+
+vector<long long> store_number(string number){
+    vector <long long> numbers_stored;
+    vector<char> redirect;
+    long long t = 0;
+    for(int i = 0; i < number.size(); i++){
+        if(redirect.size()*10 > 4,294,967,295){
+            for(int j = 0; j < redirect.size(); j++){
+                t = t*10 + redirect.at(j);
+            }
+            numbers_stored.push_back(t);
+            t = 0;
+        } else {
+            redirect.push_back(number.at(i));
+        }
+    }
+    return numbers_stored;
+}
+
+*/
 //not done yet
 // void print_array(int *array, int length, int cols)
 // {
