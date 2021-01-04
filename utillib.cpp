@@ -85,9 +85,9 @@ bool is_prime(unsigned long long nr, int k)
 
 unsigned long long get_next_prime_number(unsigned long long nr)
 {
-    if(is_prime(nr, 20))
-        nr++;
-    unsigned long long next = 1;
+    // if(is_prime(nr, 20))
+    //     nr++;
+    unsigned long long next = 0;
     while(!is_prime(next, 20)){
         if(nr & 1){
             next = nr;
@@ -100,9 +100,9 @@ unsigned long long get_next_prime_number(unsigned long long nr)
 
 unsigned long long get_prev_prime_number(unsigned long long nr)
 {
-    if(is_prime(nr, 20))
-        nr++;
-    unsigned long long prev;
+    // if(is_prime(nr, 20))
+    //     nr++;
+    unsigned long long prev = 0;
     while(!is_prime(prev, 20)){
 
         if((nr & 1) && ((nr-1) > 0)){
