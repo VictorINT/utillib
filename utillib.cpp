@@ -104,12 +104,12 @@ unsigned long long get_prev_prime_number(unsigned long long nr) {
   }
   return prev;
 }
-
-void print_vector(vector < int >
+template<typename T>
+void print_vector(vector < T >
   const & input) {
   copy(input.begin(),
     input.end(),
-    ostream_iterator < int > (cout, " "));
+    ostream_iterator < T > (cout, " "));
 }
 
 vector < long long > store_number(string number) {
