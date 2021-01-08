@@ -1,19 +1,12 @@
+#include "utillib.h"
 #include <math.h>
-
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <iostream>
-
 #include <thread>
-
 #include <vector>
-
 #include <algorithm>
-
 #include <iterator>
-
 #include <sstream>
 
 using namespace std;
@@ -104,12 +97,12 @@ unsigned long long get_prev_prime_number(unsigned long long nr) {
   }
   return prev;
 }
+
 template<typename T>
-void print_vector(vector < T >
-  const & input) {
+void print_vector(vector <T> const & input) {
   copy(input.begin(),
     input.end(),
-    ostream_iterator < T > (cout, " "));
+    ostream_iterator <T> (cout, " "));
 }
 
 vector < long long > store_number(string number) {
