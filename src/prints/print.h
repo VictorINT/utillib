@@ -7,5 +7,6 @@
 #include <sstream>
 
 template<typename T> void print_vector(vector <T> const & input);
+template<typename T> void print_array(T *arrptr, size_t size);
 
 #endif

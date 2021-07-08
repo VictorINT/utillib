@@ -8,6 +8,10 @@ void print_vector(vector <T> const & input) {
 }
 
 template<typename T> 
-void print_array(T *arrptr){
-    
+void print_array(T *arrptr, size_t size){
+    for(int i = 0; i < size; i++){
+      printf("%d", *arrptr);
+      printf(" ");
+      arrptr++;
+    }
 }
