@@ -1,6 +1,6 @@
 # utllib
 
-A c++ library with usefull functions like `print_vector()` and `primStatus()`
+A c++ library with usefull functions like `print_vector()` and `is_prime()`
 
 ## Getting Started
 
