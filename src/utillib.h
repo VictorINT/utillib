@@ -5,9 +5,4 @@
 #include "maths/math.h"
 #include "prints/print.h"
 
-//! for test
-#include "primes/prime.cpp"
-#include "maths/math.cpp"
-#include "prints/print.cpp"
-
 #endif
